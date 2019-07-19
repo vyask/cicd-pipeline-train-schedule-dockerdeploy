@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("vyask/train-schedule")
+                    app = docker.build("vyaskc/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
